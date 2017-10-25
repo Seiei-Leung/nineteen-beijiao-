@@ -45,9 +45,6 @@
 				<li><img src="img/section2_t12.png"></li>
 			</ul>
 		</div>
-		<script type="text/javascript">
-			$('.border1').css('height',($('#grid').height() - $('#grid .title').height()) + 'px')
-		</script>
 		<div class="section3">
 			<ul class="grid effect-4" id="grid2">
 				<li class="title"><img src="img/s3_titile1.png"></li>
@@ -59,9 +56,6 @@
 				<li><img src="img/section3_t3.png"></li>
 			</ul>
 		</div>
-		<script type="text/javascript">
-			$('.border2').css('height',($('#grid2').height() - $('#grid2 .title').height()) + 'px')
-		</script>
 		<div class="section4">
 			<ul class="grid effect-7" id="grid3">
 				<li class="title"><img src="img/s4_titile1.png"></li>
@@ -78,9 +72,6 @@
 				<li><img src="img/section4_t7.png"></li>
 			</ul>
 		</div>
-		<script type="text/javascript">
-			$('.border3').css('height',($('#grid3').height() - $('#grid3 .title').height()) + 'px')
-		</script>
 		<div class="section5">
 			<ul class="grid effect-7" id="grid4">
 				<li class="title"><img src="img/s5_titile1.png"></li>
@@ -128,6 +119,13 @@
 			maxDuration : 0.7,
 			viewportFactor : 0.2
 		} );
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('.border1').css('height',($('#grid').height() - $('#grid .title').height()) + 'px');
+			$('.border2').css('height',($('#grid2').height() - $('#grid2 .title').height()) + 'px');
+			$('.border3').css('height',($('#grid3').height() - $('#grid3 .title').height()) + 'px');
+		})
 	</script>
 </body>
 </html>
