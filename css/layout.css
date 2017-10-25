@@ -1,0 +1,172 @@
+/* 容器 */
+.container {
+	max-width: 768px;
+	margin:auto;
+	background-image: url('../img/background.jpg');
+	background-repeat: repeat-y;
+	background-size: 100%;
+	padding-bottom: 100px;
+}
+
+/* 版头 */
+.header img{
+	width: 100%;
+	height: 100%
+}
+.header{
+	overflow: hidden;
+}
+
+/* 徽章 */
+.section1 {
+	width: 85%;
+	margin:auto;
+	padding-top:10px;
+}
+.section1 ul{
+	overflow: hidden;
+}
+.section1 li{
+	float: left;
+	display: inline-block;
+	width: 40%;
+	margin-top: 20px;
+}
+.section1 li:nth-child(2n){
+	margin-left: 20%
+}
+.section1 img{
+	width: 100%
+}
+
+/* 主体 */
+.section2 .title,
+.section3 .title,
+.section4 .title,
+.section5 .title,
+.section6 .title {
+	width: 95%;
+	margin-left:2.5%;
+}
+.section2 .sm_title,
+.section3 .sm_title,
+.section4 .sm_title,
+.section5 .sm_title,
+.section6 .sm_title {
+	width: 85%;
+	margin-left:7.5%;
+	margin-top: 20px;
+}
+.section2 img,
+.section3 img,
+.section4 img,
+.section5 img,
+.section6 img{
+	width: 100%;
+}
+.section2 li,
+.section3 li,
+.section4 li,
+.section5 li,
+.section6 li{
+	opacity: 0;
+	width: 80%;
+	margin-top: 10px;
+	margin-left: 13%
+}
+
+/* 边线 */
+.border1,
+.border2,
+.border3 {
+	position: absolute;
+	top:10%;
+	left: 2.4%;
+	width: .8%!important;
+	background-color: #e8641e
+}
+
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	-moz-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveUp {
+	to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	to { transform: translateY(0); opacity: 1; }
+}
+
+/* Effect 4: fall perspective */
+.grid.effect-4 {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-4 li.animate {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	-moz-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	-webkit-animation: fallPerspective .8s ease-in-out forwards;
+	-moz-animation: fallPerspective .8s ease-in-out forwards;
+	animation: fallPerspective .8s ease-in-out forwards;
+}
+
+@-webkit-keyframes fallPerspective {
+	100% { -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+@-moz-keyframes fallPerspective {
+	100% { -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+@keyframes fallPerspective {
+	100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+/* Effect 7: helix (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-7 {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-7 li.animate {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	-webkit-animation: helix .8s ease-in-out forwards;
+	-moz-animation: helix .8s ease-in-out forwards;
+	animation: helix .8s ease-in-out forwards;
+}
+
+@-webkit-keyframes helix {
+	100% { -webkit-transform: rotateY(0deg); opacity: 1; }
+}
+
+@-moz-keyframes helix {
+	100% { -moz-transform: rotateY(0deg); opacity: 1; }
+}
+
+@keyframes helix {
+	100% { transform: rotateY(0deg); opacity: 1; }
+}

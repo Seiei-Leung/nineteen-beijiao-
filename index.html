@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<script type="text/javascript" src="js/jquery1.8.3.js"></script>
+	<script type="text/javascript" src="js/nineteen.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body style="background-color: #ccc">
+	<div class="container">
+		<ul class="header">
+			<li style="background-color:#ffe27d"><img src="img/topbar.jpg"></li>
+			<li><img src="img/topbar_bg.jpg"></li>
+		</ul>
+		<div class="section1">
+			<ul>
+				<li><img src="img/section1_1.png"></li>
+				<li><img src="img/section1_2.png"></li>
+				<li><img src="img/section1_3.png"></li>
+				<li><img src="img/section1_4.png"></li>
+				<li><img src="img/section1_5.png"></li>
+				<li><img src="img/section1_6.png"></li>
+			</ul>
+		</div>
+		<div class="section2">
+			<ul class="grid effect-2" id="grid">
+				<li class="title"><img src="img/s2_titile1.png"></li>
+				<li class="sm_title"><img src="img/s2_sm_titile1.png"><div class="border1"></div></li>
+				<li><img src="img/section2_t1.png"></li>
+				<li><img src="img/section2_t2.png"></li>
+				<li><img src="img/section2_t3.png"></li>
+				<li><img src="img/section2_t4.png"></li>
+				<li class="sm_title"><img src="img/s2_sm_titile2.png"></li>
+				<li><img src="img/section2_t5.png"></li>
+				<li><img src="img/section2_t6.png"></li>
+				<li style="margin-top: 30px"><img src="img/section2_t7.png"></li>
+				<li><img src="img/section2_t8.png"></li>
+				<li><img src="img/section2_t9.png"></li>
+				<li><img src="img/section2_t10.png"></li>
+				<li><img src="img/section2_t11.png"></li>
+				<li><img src="img/section2_t12.png"></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$('.border1').css('height',($('#grid').height() - $('#grid .title').height()) + 'px')
+		</script>
+		<div class="section3">
+			<ul class="grid effect-4" id="grid2">
+				<li class="title"><img src="img/s3_titile1.png"></li>
+				<li class="sm_title"><img src="img/s3_sm_titile1.png"><div class="border2"></div></li>
+				<li><img src="img/section3_t1.png"></li>
+				<li class="sm_title"><img src="img/s3_sm_titile2.png"></li>
+				<li><img src="img/section3_t2.png"></li>
+				<li class="sm_title"><img src="img/s3_sm_titile3.png"></li>
+				<li><img src="img/section3_t3.png"></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$('.border2').css('height',($('#grid2').height() - $('#grid2 .title').height()) + 'px')
+		</script>
+		<div class="section4">
+			<ul class="grid effect-7" id="grid3">
+				<li class="title"><img src="img/s4_titile1.png"></li>
+				<li class="sm_title"><img src="img/s4_sm_titile1.png"><div class="border3"></div></li>
+				<li><img src="img/section4_t1.png"></li>
+				<li><img src="img/section4_t2.png"></li>
+				<li class="sm_title"><img src="img/s4_sm_titile2.png"></li>
+				<li><img src="img/section4_t3.png"></li>
+				<li><img src="img/section4_t4.png"></li>
+				<li><img src="img/section4_t5.png"></li>
+				<li class="sm_title"><img src="img/s4_sm_titile3.png"></li>
+				<li><img src="img/section4_t6.png"></li>
+				<li class="sm_title"><img src="img/s4_sm_titile4.png"></li>
+				<li><img src="img/section4_t7.png"></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$('.border3').css('height',($('#grid3').height() - $('#grid3 .title').height()) + 'px')
+		</script>
+		<div class="section5">
+			<ul class="grid effect-7" id="grid4">
+				<li class="title"><img src="img/s5_titile1.png"></li>
+				<li><img src="img/section5_t1.png"></li>
+				<li><img src="img/section5_t2.png"></li>
+				<li><img src="img/section5_t3.png"></li>
+			</ul>
+		</div>
+		<div class="section6">
+			<ul class="grid effect-7" id="grid5">
+				<li class="title"><img src="img/s6_titile1.png"></li>
+				<li><img src="img/section6_t1.png"></li>
+				<li><img src="img/section6_t2.png"></li>
+				<li><img src="img/section6_t3.png"></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/AnimOnScroll.js"></script>
+	<script>
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+		new AnimOnScroll( document.getElementById( 'grid2' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+		new AnimOnScroll( document.getElementById( 'grid3' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+		new AnimOnScroll( document.getElementById( 'grid4' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+		new AnimOnScroll( document.getElementById( 'grid5' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+	</script>
+</body>
+</html>
